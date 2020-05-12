@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 export const FullScreen = styled.div`
     position: relative;
-    & div {
-    background-color: white;
-    width: 1920px;
-    height: 1080px;
+    background-color: ${props => props.bgColor};
+    
+    & > div {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
     }
 `;
